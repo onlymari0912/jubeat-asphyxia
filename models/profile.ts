@@ -8,7 +8,7 @@ export default interface Profile {
     lastPlayTime?: number;
     lastShopname: string;
     lastAreaname: string;
-    isFirstplay: boolean;
+    isFirst: boolean;
     musicId?: number;
     seqId?: number;
     seqEditId?: string;
@@ -57,4 +57,6 @@ export default interface Profile {
     themeListNew?: number[];
     markerListNew?: number[];
     titleListNew?: number[];
+
+    rivals?: Record<string, any>[]; // 라이벌의 jubeat 목록
 }
